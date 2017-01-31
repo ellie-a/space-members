@@ -1,0 +1,17 @@
+{
+  "name": "member-search",
+  "description": "",
+  "main": "",
+  "authors": [
+    "ea <elliea915@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
