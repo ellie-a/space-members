@@ -1,29 +1,29 @@
 {"members": [{
-  "name":,
-  "position":,
-  "mission":,
-  "year":,
-  "details":
+  "name": "Yuri Gagarin",
+  "position": "Pilot Cosmonaut",
+  "mission": "Pilot Cosmonaut",
+  "year": "12 April 1961",
+  "details": "The first human to journey into outer space, when his Vostok spacecraft completed an orbit of the Earth."
 },
 {
-  "name":,
-  "position":,
-  "mission":,
-  "year":,
-  "details":
+  "name": "Alexey Leonov",
+  "position": "Second Pilot",
+  "mission": "Voskhod 2",
+  "year": "18 March 1965",
+  "details": "First human to conduct extravehicular activity (EVA), exiting the capsule during the Voskhod 2 mission for a 12-minute spacewalk"
 },
 {
-  "name":,
-  "position":,
-  "mission":,
-  "year":,
-  "details":
+  "name": "Boris Yegorov",
+  "position": "Doctor Cosmonaut",
+  "mission": "Voskhod",
+  "year":"October 1964 ",
+  "details": "Was a Soviet physician-cosmonaut who became the first physician to make a space flight."
 },
 {
-  "name":,
-  "position":,
-  "mission":,
-  "year":,
-  "details":
+  "name": "Dennis Tito",
+  "position": "Spaceflight Participant",
+  "mission": "Soyuz TM-32 ",
+  "year": "28 April 2001",
+  "details": "First fee-paying space tourist"
 }
 ]}
