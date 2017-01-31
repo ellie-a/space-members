@@ -1,29 +1,33 @@
 {"members": [{
   "name": "Yuri Gagarin",
   "position": "Pilot Cosmonaut",
-  "mission": "Pilot Cosmonaut",
+  "mission": "Voskhod 2",
   "year": "12 April 1961",
-  "details": "The first human to journey into outer space, when his Vostok spacecraft completed an orbit of the Earth."
+  "details": "The first human to journey into outer space, when his Vostok spacecraft completed an orbit of the Earth.",
+  "image": "https://s.inyourpocket.com/gallery/7137.jpg"
 },
 {
   "name": "Alexey Leonov",
   "position": "Second Pilot",
   "mission": "Voskhod 2",
   "year": "18 March 1965",
-  "details": "First human to conduct extravehicular activity (EVA), exiting the capsule during the Voskhod 2 mission for a 12-minute spacewalk"
+  "details": "First human to conduct extravehicular activity (EVA), exiting the capsule during the Voskhod 2 mission for a 12-minute spacewalk",
+  "image": "http://www.uthtime.in/wp-content/uploads/2015/01/Alexei-Leonov.jpg"
 },
 {
   "name": "Boris Yegorov",
   "position": "Doctor Cosmonaut",
   "mission": "Voskhod",
   "year":"October 1964 ",
-  "details": "Was a Soviet physician-cosmonaut who became the first physician to make a space flight."
+  "details": "Was a Soviet physician-cosmonaut who became the first physician to make a space flight.",
+  "image": "http://www.howdoibecomea.net/wp-content/uploads/2013/02/Bonus-Boris-Yegorov.jpg"
 },
 {
   "name": "Dennis Tito",
   "position": "Spaceflight Participant",
   "mission": "Soyuz TM-32 ",
   "year": "28 April 2001",
-  "details": "First fee-paying space tourist"
+  "details": "First fee-paying space tourist",
+  "image": "https://s3.amazonaws.com/rapgenius/1374962351_TITO_2494575c.jpg"
 }
 ]}

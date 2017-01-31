@@ -1,3 +1,16 @@
-<p>
-  home works!
-</p>
+<div class="row">
+  <div class="col s4" *ngFor="let member of members | async">
+    <div class="card">
+      <div class="card-image">
+        <img src={{member.image}}>
+      </div>
+      <div class="card-content">
+        <span class="card-title">{{member.name}}</span>
+        <p>{{member.position}} on the {{member.mission}} mission</p>
+      </div>
+      <div class="card-action">
+        <a href="#">Fun Facts</a>
+      </div>
+    </div>
+  </div>
+</div>
