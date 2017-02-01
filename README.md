@@ -12,19 +12,21 @@
 A web app that allows the user view different members of space missions and what their positions are. It allows users to filter the search by position, and if "Fun Facts" is clicked it transfers users to corresponding route with member id. It also allows an "admin" to add new, edit, and delete members.
 
 ## Setup/Installation Requirements
- Requires Angular2 Cli and Typescript (please download/install if not on computer)
-1. Download this repo using your terminal: git clone https://github.com/ellie-a/space-members
 
-2. Use npm install and bower install in the top level of the project directory in the terminal  to retrieve packages used ex:
+1. Requires Angular2 Cli and Typescript (please download/install if not on computer)
+
+2. Download this repo using your terminal: git clone https://github.com/ellie-a/space-members
+
+3. Use npm install and bower install in the top level of the project directory in the terminal  to retrieve packages used ex:
     $npm install
     $bower install
 
-3. View the code by drag-and-dropping the file into your [favorite text editor](https://atom.io)
-    If you don't have the atom package for typescript I highly suggest it. Install globally by using the command : apm install atom-typescript.
+4. View the code by drag-and-dropping the file into your [favorite text editor](https://atom.io)
+    Install Typescript reader by using the command : apm install atom-typescript.
 
-4. Follow along with this lesson to add your own Firebase Api (https://www.learnhowtoprogram.com/javascript/angular-extended/firebase-introduction-and-setup)
+5. Follow along with this lesson to add your own Firebase Api (https://www.learnhowtoprogram.com/javascript/angular-extended/firebase-introduction-and-setup)
 
-5. After you have successfully linked your own Firebase, run ng serve in the CLI
+6. After you have successfully linked your own Firebase, run ng serve in the CLI
 
 
 
