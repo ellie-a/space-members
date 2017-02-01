@@ -20,11 +20,16 @@ export class AdminComponent implements OnInit {
     this.members = this.memberService.getMembers();
   }
 
-  deleteProject(member) {
+  submitForm(name: string, position: string, mission: string, year: string, details: string, image: string) {
+   this.memberService.addMember(new Member(name, position, mission, year, details, image));
+   this.router.navigate(['']);
+  }
+
+  deleteMember(member) {
     this.memberService.delete(member);
   }
 
-  editSelectedProject(member: any){
+  editSelectedMember(member: any){
     this.memberService.hideAllEditComponents();
     member.edit = true;
   }

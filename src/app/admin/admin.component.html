@@ -1,3 +1,38 @@
+<div class="center addMember">
+  <h4>Add Member</h4>
+  <form class="col 6">
+    <div class="row">
+      <div class="input-field col s4">
+        <input type="text" #name>
+        <label>Name</label>
+      </div>
+      <div class="input-field col s4">
+        <input type="text" #position>
+        <label>Position</label>
+      </div>
+      <div class="input-field col s4">
+        <input type="text" #mission>
+        <label>Mission</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s4">
+          <input type="text" #year>
+          <label>Date</label>
+      </div>
+      <div class="input-field col s4">
+          <input type="text" #details>
+          <label>Details</label>
+      </div>
+      <div class="input-field col s4">
+          <input type="url" #image>
+          <label>Image URL</label>
+      </div>
+    </div>
+      <button class="btn waves-effect waves-light" (click)="submitForm(name.value, position.value, mission.value, year.value, details.value, image.value)">Add Member</button>
+  </form>
+</div>
+<br>
 <div *ngFor="let member of members | async">
   <div class="col l6">
     <div class="card member-card">
@@ -6,8 +41,8 @@
           <h4 class="card-title" (click)="navigateTo(member.$key)">{{member.name}}</h4>
         </div>
         <div class="col s4">
-          <i class="material-icons right admin-buttons red-text text-darken-3" (click)="deleteProject(member)" >delete</i>
-          <i class="material-icons right admin-buttons green-text text-darken-3" (click)="editSelectedProject(member)">mode_edit</i>
+          <i class="material-icons right admin-buttons red-text text-darken-3" (click)="deleteMember(member)" >delete</i>
+          <i class="material-icons right admin-buttons green-text text-darken-3" (click)="editSelectedMember(member)">mode_edit</i>
         </div>
       </div>
       <div class="card-content row" *ngIf="member.edit">
