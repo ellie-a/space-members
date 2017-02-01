@@ -1,1 +1,8 @@
-
+<div class="row  centerContent">
+  <div class="col m8  centerContent">
+    <img src="{{(memberToDisplay | async)?.image}}" alt="" class="center">
+    <h3>{{(memberToDisplay | async)?.name}}</h3>
+    <h4>{{(memberToDisplay | async)?.position}} - {{(memberToDisplay | async)?.mission}} - {{(memberToDisplay | async)?.year}}</h4>
+    <p>{{(memberToDisplay | async)?.details}}</p>
+  </div>
+</div>
