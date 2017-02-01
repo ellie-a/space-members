@@ -1,3 +1,18 @@
-<p>
-  admin works!
-</p>
+<div *ngFor="let member of members | async">
+  <div class="col l6">
+    <div class="card member-card">
+      <div class="card-content row" *ngIf="!member.edit" >
+        <div class="col s8">
+          <h4 class="card-title" (click)="navigateTo(member.$key)">{{member.name}}</h4>
+        </div>
+        <div class="col s4">
+          <i class="material-icons right admin-buttons red-text text-darken-3" (click)="deleteProject(member)" >delete</i>
+          <i class="material-icons right admin-buttons green-text text-darken-3" (click)="editSelectedProject(member)">mode_edit</i>
+        </div>
+      </div>
+      <div class="card-content row" *ngIf="member.edit">
+        <app-edit [selectedMember]="member"></app-edit>
+      </div>
+    </div>
+  </div>
+</div>

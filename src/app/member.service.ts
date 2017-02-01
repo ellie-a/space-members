@@ -20,4 +20,28 @@ export class MemberService {
    return this.angularFire.database.object('/members/' + memberId);
  }
 
+  updateMember(localUpdateMember){
+    var memberEntryInFirebase = this.getMemberById(localUpdateMember.$key);
+    memberEntryInFirebase.update({name: localUpdateMember.name,
+                                position: localUpdateMember.position,
+                                mission: localUpdateMember.mission,
+                                year: localUpdateMember.year,
+                                details: localUpdateMember.details,
+                                image: localUpdateMember.image,
+                                })
+  }
+
+  hideAllEditComponents(){
+    var instance = this;
+    this.members.forEach(function(memberArray){
+      memberArray.forEach(function(member){
+        member.edit = false;
+        instance.updateMember(member);
+      })
+    })
+  }
+
+  delete(memberToDelete) {
+    this.getMemberById(memberToDelete.$key).remove();
+  }
 }

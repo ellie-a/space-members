@@ -8,7 +8,7 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MemberDetailsComponent } from './member-details/member-details.component';
-import { EditMemberComponent } from './edit-member/edit-member.component';
+import { EditMemberComponent } from './admin/edit-member/edit-member.component';
 import { AdminComponent } from './admin/admin.component';
 import { AboutComponent } from './about/about.component';
 
