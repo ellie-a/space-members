@@ -13,6 +13,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 export class HomeComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterByPosition: string = "";
 
   constructor(private router: Router, private memberService: MemberService) { }
 
@@ -24,5 +25,7 @@ goToDetailPage(clickedMember) {
     this.router.navigate(['members', clickedMember.$key]);
   };
 
-
+  onChange(optionFromMenu) {
+    this.filterByPosition = optionFromMenu;
+  }
 }

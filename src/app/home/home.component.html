@@ -1,5 +1,17 @@
+<div class="position">
+      <select class="dropDown col s6" (change)="onChange($event.target.value)" >
+        <option value="all" selected="selected">All Positions</option>
+        <option value="Pilot Cosmonaut">Pilot Cosmonaut</option>
+        <option value="Second Pilot">Second Pilot</option>
+        <option value="Doctor Cosmonaut">Doctor Cosmonaut</option>
+        <option value="Spaceflight Participant">Spaceflight Participant</option>
+      </select>
+</div>
+
+<br><br>
+<hr>
 <div class="row">
-  <div class="col s4" *ngFor="let member of members | async">
+  <div class="col s4" *ngFor="let member of members | async | pipeSearch:filterByPosition">
     <div class="card">
       <div class="card-image">
         <img src={{member.image}}>
