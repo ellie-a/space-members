@@ -12,7 +12,7 @@
 A web app that allows the user view different members of space missions and what their positions are. It allows users to filter the search by position, and if "Fun Facts" is clicked it transfers users to corresponding route with member id. It also allows an "admin" to add new, edit, and delete members.
 
 ## Setup/Installation Requirements
-# _Requires Angular2 Cli and Typescript (please download/install if not on computer)_
+ Requires Angular2 Cli and Typescript (please download/install if not on computer)
 1. Download this repo using your terminal: git clone https://github.com/ellie-a/space-members
 
 2. Use npm install and bower install in the top level of the project directory in the terminal  to retrieve packages used ex:
